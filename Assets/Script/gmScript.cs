@@ -37,13 +37,14 @@ public class gmScript : MonoBehaviour
     {
         string soal = "abc";
 
-        
+
+    
         if (Click.game == 1)
         {
             spellWord.GetComponent<TMPro.TextMeshProUGUI>().text = currentWord;
             if (currentWord == soal && count == 3)
             {
-                //cek = 1;
+                cek = 1;
                 FindObjectOfType<benar>().JawabanBenar();
                // result.GetComponent<TextMesh>().text = "Benar";
                 lett1.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[0];
