@@ -18,7 +18,7 @@ public class gmScript : MonoBehaviour
     public RectTransform lett3;
 
     public static List<string> selectLetter = new List<string>() { "", "", "", "", "", "" };
-    public static List<string> selectSoal = new List<string>() { "a", "b", "c", "", "", ""};
+    public static List<string> selectSoal = new List<string>() { "c", "o", "l", "", "", ""};
     public static int letterNum = 0;
 
     // public RectTransform ParentPanel;
@@ -44,7 +44,7 @@ public class gmScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        string soal = "collaborate";
+        string soal = "col";
 
         
 
@@ -53,7 +53,7 @@ public class gmScript : MonoBehaviour
         {
             
             spellWord.GetComponent<TMPro.TextMeshProUGUI>().text = currentWord;
-            if (currentWord == soal && count == 11)
+            if (currentWord == soal && count == 3)
             {
                 cek = 1;
                 nilai += 10;
@@ -64,7 +64,7 @@ public class gmScript : MonoBehaviour
                 lett2.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[1];
                 lett3.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[2];
             }
-            else if (currentWord != soal && count == 11)
+            else if (currentWord != soal && count == 3)
             {
                 FindObjectOfType<salah>().JawabanSalah();
                // result.GetComponent<TextMesh>().text = "Salah";
