@@ -17,7 +17,7 @@ public class benar : MonoBehaviour {
     public void Start()
     {
         // gmScript.currentWord = "";
-        if(gmScript.currentWord == "col")
+        if(gmScript.currentWord == soal)
         {
             lett1.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[0];
             lett2.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[1];
