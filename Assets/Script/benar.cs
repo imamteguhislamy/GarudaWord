@@ -22,6 +22,7 @@ public class benar : MonoBehaviour {
             lett1.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[0];
             lett2.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[1];
             lett3.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[2];
+            Click.game = 0;
             gmScript.currentWord = "";
         } else
         { 
