@@ -9,7 +9,7 @@ public class salah : MonoBehaviour
     private void Start()
     {
         transparan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
-
+ 
     }
     public void JawabanSalah()
     {
@@ -28,7 +28,7 @@ public class salah : MonoBehaviour
         Click.game = 1;
         gmScript.count = 0;
         gmScript.currentWord = "";
-
+        
     }
-
+    
 }
