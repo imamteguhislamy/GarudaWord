@@ -11,6 +11,8 @@ public class benar : MonoBehaviour {
     public RectTransform lett1;
     public RectTransform lett2;
     public RectTransform lett3;
+    public Image Img;
+    public Animator Anim;
 
     public static List<string> selectSoal = new List<string>() { "c", "o", "l", "", "", ""};
 
@@ -45,6 +47,8 @@ public class benar : MonoBehaviour {
         gmScript.count = 0;
         gmScript.currentWord = soal;
         yield return new WaitForSeconds(1f);
+        Anim.SetBool("Fade", true);
+        yield return new WaitUntil(()=>Img.color.a==1);
         SceneManager.LoadScene(category);
     }
 }

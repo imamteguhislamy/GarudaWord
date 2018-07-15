@@ -12,8 +12,8 @@ public class MenuScript : MonoBehaviour {
 
     public void ChangeScene()
     {
-        //StartCoroutine(Fade());
-        SceneManager.LoadScene(sceneName);
+        StartCoroutine(Fade());
+        // SceneManager.LoadScene(sceneName);
     }
 
     IEnumerator Fade()
