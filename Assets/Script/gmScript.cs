@@ -6,7 +6,7 @@ using UnityEngine.Experimental.UIElements;
 public class gmScript : MonoBehaviour
 {
     public static string currentWord;
-    public static string soal;
+    // public static string soal;
 
     public Transform spellWord;
     public Transform result;
@@ -17,8 +17,10 @@ public class gmScript : MonoBehaviour
     public RectTransform lett2;
     public RectTransform lett3;
 
+    public string soal = "col";
+
     public static List<string> selectLetter = new List<string>() { "", "", "", "", "", "" };
-    public static List<string> selectSoal = new List<string>() { "c", "o", "l", "", "", ""};
+    public static List<string> selectSoal = new List<string>() {  "", "", "" };
     public static int letterNum = 0;
 
     // public RectTransform ParentPanel;
@@ -39,35 +41,35 @@ public class gmScript : MonoBehaviour
         // Debug.Log("Start Count = " + count);
     }
 
-   
+
 
     // Update is called once per frame
     void Update()
     {
-        string soal = "col";
+        //string soal = "col";
 
-        
+
 
 
         if (Click.game == 1)
         {
-            
+
             spellWord.GetComponent<TMPro.TextMeshProUGUI>().text = currentWord;
-            if (currentWord == soal && count == 3)
+            if (currentWord == soal && count == soal.Length)
             {
                 cek = 1;
                 nilai += 10;
                 score.GetComponent<TMPro.TextMeshProUGUI>().text = nilai.ToString();
                 FindObjectOfType<benar>().JawabanBenar();
-               // result.GetComponent<TextMesh>().text = "Benar";
+                // result.GetComponent<TextMesh>().text = "Benar";
                 lett1.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[0];
                 lett2.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[1];
                 lett3.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[2];
             }
-            else if (currentWord != soal && count == 3)
+            else if (currentWord != soal && count == soal.Length)
             {
                 FindObjectOfType<salah>().JawabanSalah();
-               // result.GetComponent<TextMesh>().text = "Salah";
+                // result.GetComponent<TextMesh>().text = "Salah";
 
                 //Debug.Log("Anda Salah");
             }
