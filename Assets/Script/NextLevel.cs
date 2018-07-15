@@ -39,7 +39,7 @@ public class NextLevel : MonoBehaviour {
 
 	public void next()
 	{
-		LevelUnlocker.NextLevel();
+		LevelUnlocker.Next_Level();
 		SceneManager.LoadScene(sceneload);
 	}
 

@@ -20,7 +20,7 @@ public class LevelUnlocker : MonoBehaviour {
 		{
 			if (i <= level)
 			{
-				levelUnlocker[i].SetActive(False);
+				levelUnlocker[i].SetActive(false);
 				Debug.Log("" + level);
 			}
 			else
@@ -31,7 +31,7 @@ public class LevelUnlocker : MonoBehaviour {
 		}
 	}
 
-	public static void NextLevel()
+	public static void Next_Level()
 	{	
 		if(level == NextLevel.thelevel)
 		{
@@ -48,7 +48,7 @@ public class LevelUnlocker : MonoBehaviour {
 
 	public void add_level()
 	{
-		NextLevel();
+		Next_Level();
 		SceneManager.LoadScene(loads);
 	}
 
