@@ -17,10 +17,12 @@ public class gmScript : MonoBehaviour
     public RectTransform lett2;
     public RectTransform lett3;
 
+
     public string soal = "col";
 
+
     public static List<string> selectLetter = new List<string>() { "", "", "", "", "", "" };
-    public static List<string> selectSoal = new List<string>() {  "", "", "" };
+    public static List<string> selectSoal = new List<string>() { "", "", "", "", "" };
     public static int letterNum = 0;
 
     // public RectTransform ParentPanel;
@@ -50,7 +52,6 @@ public class gmScript : MonoBehaviour
 
 
 
-
         if (Click.game == 1)
         {
 
@@ -62,9 +63,9 @@ public class gmScript : MonoBehaviour
                 score.GetComponent<TMPro.TextMeshProUGUI>().text = nilai.ToString();
                 FindObjectOfType<benar>().JawabanBenar();
                 // result.GetComponent<TextMesh>().text = "Benar";
-                lett1.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[0];
-                lett2.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[1];
-                lett3.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[2];
+                lett1.GetComponent<TMPro.TextMeshProUGUI>().text = selectLetter[1];
+                lett2.GetComponent<TMPro.TextMeshProUGUI>().text = selectLetter[2];
+                lett3.GetComponent<TMPro.TextMeshProUGUI>().text = selectLetter[3];
             }
             else if (currentWord != soal && count == soal.Length)
             {

@@ -28,15 +28,15 @@ public class hint : MonoBehaviour
     {
         if (hintCount >= 3) 
         {
-             lett1.GetComponent<TMPro.TextMeshProUGUI>().text = gmScript.selectSoal[0];
+             lett1.GetComponent<TMPro.TextMeshProUGUI>().text = gmScript.selectLetter[1];
             hintCount -= 1;
         } else if (hintCount >= 2)
         {
-            lett2.GetComponent<TMPro.TextMeshProUGUI>().text = gmScript.selectSoal[1];
+            lett2.GetComponent<TMPro.TextMeshProUGUI>().text = gmScript.selectLetter[2];
             hintCount -= 1;
         } else if (hintCount >= 1)
         {
-            lett3.GetComponent<TMPro.TextMeshProUGUI>().text = gmScript.selectSoal[2];
+            lett3.GetComponent<TMPro.TextMeshProUGUI>().text = gmScript.selectLetter[2];
             hintCount -= 1;
         }
     }
