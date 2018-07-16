@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "930083352126",
+    "firebase_url": "https://garudaword-1651e.firebaseio.com",
+    "project_id": "garudaword-1651e",
+    "storage_bucket": "garudaword-1651e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930083352126:android:f0098993816f735d",
+        "android_client_info": {
+          "package_name": "com.garuda.garudaWord"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930083352126-ll6cjvlolmac94vaea1jbak0bfsqceb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjyaJsA65HPqKTbkpSfsRe198qbvPBQww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
