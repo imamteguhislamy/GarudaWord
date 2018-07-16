@@ -14,20 +14,20 @@ public class benar : MonoBehaviour {
     public Image Img;
     public Animator Anim;
 
-    public static List<string> selectSoal = new List<string>() { "c", "o", "l", "", "", ""};
+    //public static List<string> selectSoal = new List<string>() { "c", "o", "l", "", "", ""};
 
     public void Start()
     {
-        // gmScript.currentWord = "";
-        if(gmScript.currentWord == soal)
-        {
-            lett1.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[0];
-            lett2.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[1];
-            lett3.GetComponent<TMPro.TextMeshProUGUI>().text = selectSoal[2];
-            Click.game = 0;
+       //gmScript.currentWord = "";
+       if(gmScript.currentWord == soal)
+       {
+            lett1.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(0, 1);
+            lett2.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(1, 1);
+            lett3.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(2, 1);
+            popUp.game = 1;
             gmScript.currentWord = "";
         } else
-        { 
+       { 
             transparan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
         }
     }
@@ -37,7 +37,7 @@ public class benar : MonoBehaviour {
         
         transparan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         //Debug.Log("Benar");
-        Click.game = 0;
+        popUp.game = 0;
         Debug.Log("Next Level");
         StartCoroutine(reset());
     }

@@ -15,7 +15,7 @@ public class salah : MonoBehaviour
     {
         transparan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         //Debug.Log("Muncul Icon");
-        Click.game = 0;
+        popUp.game = 0;
         gmScript.cek = 0;
         //Debug.Log("Muncul");
         StartCoroutine("Delay");
@@ -25,7 +25,7 @@ public class salah : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         transparan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
-        Click.game = 1;
+        popUp.game = 1;
         gmScript.count = 0;
         gmScript.currentWord = "";
         

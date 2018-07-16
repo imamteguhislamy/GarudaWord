@@ -22,7 +22,7 @@ public class popUp : MonoBehaviour
     {
         if (game == 1) ;
         {
-            Debug.Log("tempe");
+            //Debug.Log("tempe");
             gmScript.cek = 1;
             gmScript.count++;
             //gmScript.currentWord += GetComponent<SpriteRenderer>().sprite.name;

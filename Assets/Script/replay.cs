@@ -16,10 +16,10 @@ public class replay : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        Click.game = 1;
+        popUp.game = 1;
         gmScript.currentWord = "";
         gmScript.count = 0;
-        Debug.Log(Click.game + "-" + gmScript.count);
+        Debug.Log(popUp.game + "-" + gmScript.count);
         FindObjectOfType<benar>().Start();
 
     }
