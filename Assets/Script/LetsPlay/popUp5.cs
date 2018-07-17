@@ -36,9 +36,5 @@ public class popUp5 : MonoBehaviour
             Debug.Log("Count = " + gm5.count);
             Debug.Log(game);
         }
-        if (game == 0)
-        {
-            Debug.Log("Freeze");
-        }
     }
 }
