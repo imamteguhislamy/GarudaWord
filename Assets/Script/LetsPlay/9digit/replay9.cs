@@ -23,7 +23,7 @@ public class replay9 : MonoBehaviour
         gm9.currentWord = "";
         gm9.count = 0;
         Debug.Log(popUp9.game + "-" + gm9.count);
-        FindObjectOfType<benar8>().Start();
+        FindObjectOfType<benar9>().Start();
 
     }
 }

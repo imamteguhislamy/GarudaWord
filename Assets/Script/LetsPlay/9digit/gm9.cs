@@ -61,7 +61,7 @@ public class gm9 : MonoBehaviour
                 cek = 1;
                 nilai += 10;
                 score.GetComponent<TMPro.TextMeshProUGUI>().text = nilai.ToString();
-                FindObjectOfType<benar8>().JawabanBenar();
+                FindObjectOfType<benar9>().JawabanBenar();
                 // result.GetComponent<TextMesh>().text = "Benar";
                 lett1.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(0, 1);
                 lett2.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(1, 1);
@@ -75,7 +75,7 @@ public class gm9 : MonoBehaviour
             }
             else if (currentWord != soal && count == soal.Length)
             {
-                FindObjectOfType<salah8>().JawabanSalah();
+                FindObjectOfType<salah9>().JawabanSalah();
                 // result.GetComponent<TextMesh>().text = "Salah";
 
                 //Debug.Log("Anda Salah");

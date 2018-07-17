@@ -39,7 +39,7 @@ public class gm6 : MonoBehaviour
     void Start()
     {
         LoadScore();
-        SkorTersimpan.GetComponent<TextMesh>().text = SavedScore.ToString();
+        SkorTersimpan.GetComponent<TMPro.TextMeshProUGUI>().text = SavedScore.ToString();
         // Debug.Log("Start Count = " + count);
     }
 
@@ -49,7 +49,7 @@ public class gm6 : MonoBehaviour
     void Update()
     {
 
-        if (popUp5.game == 1)
+        if (popUp6.game == 1)
         {
 
             spellWord.GetComponent<TMPro.TextMeshProUGUI>().text = currentWord;
@@ -58,7 +58,7 @@ public class gm6 : MonoBehaviour
                 cek = 1;
                 nilai += 10;
                 score.GetComponent<TMPro.TextMeshProUGUI>().text = nilai.ToString();
-                FindObjectOfType<benar5>().JawabanBenar();
+                FindObjectOfType<benar6>().JawabanBenar();
                 // result.GetComponent<TextMesh>().text = "Benar";
                 lett1.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(0, 1);
                 lett2.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(1, 1);
@@ -69,7 +69,7 @@ public class gm6 : MonoBehaviour
             }
             else if (currentWord != soal && count == soal.Length)
             {
-                FindObjectOfType<salah5>().JawabanSalah();
+                FindObjectOfType<salah6>().JawabanSalah();
                 // result.GetComponent<TextMesh>().text = "Salah";
 
                 //Debug.Log("Anda Salah");
