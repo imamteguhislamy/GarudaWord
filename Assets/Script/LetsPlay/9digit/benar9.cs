@@ -52,13 +52,13 @@ public class benar9 : MonoBehaviour
 
         transparan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         //Debug.Log("Benar");
-        popUp9.game = 0;
         Debug.Log("Next Level");
         StartCoroutine(reset());
     }
 
     IEnumerator reset()
     {
+        popUp9.game = 0;
         gm9.count = 0;
         gm9.currentWord = soal;
         yield return new WaitForSeconds(1f);

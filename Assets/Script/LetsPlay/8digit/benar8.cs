@@ -26,7 +26,7 @@ public class benar8 : MonoBehaviour
     public void Start()
     {
         // gmScript.currentWord = "";
-        if (gm6.currentWord == soal)
+        if (gm8.currentWord == soal)
         {
             lett1.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(0, 1);
             lett2.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(1, 1);
@@ -37,7 +37,7 @@ public class benar8 : MonoBehaviour
             lett7.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(6, 1);
             lett8.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(7, 1);
             popUp8.game = 0;
-            gm6.currentWord = "";
+            gm8.currentWord = "";
         }
         else
         {
@@ -50,13 +50,14 @@ public class benar8 : MonoBehaviour
 
         transparan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         //Debug.Log("Benar");
-        popUp8.game = 0;
+        
         Debug.Log("Next Level");
         StartCoroutine(reset());
     }
 
     IEnumerator reset()
     {
+        popUp8.game = 0;
         gm8.count = 0;
         gm8.currentWord = soal;
         yield return new WaitForSeconds(1f);
