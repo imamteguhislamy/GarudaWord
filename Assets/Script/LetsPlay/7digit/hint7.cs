@@ -7,7 +7,7 @@ public class hint7 : MonoBehaviour
 
     // Use this for initialization
     public static int hintCount;
-    public string soal = "trust";
+    public string soal = "analyze";
 
     public RectTransform lett1;
     public RectTransform lett2;
