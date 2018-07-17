@@ -34,20 +34,20 @@ public class benar : MonoBehaviour {
 
     public void JawabanBenar()
     {
-        
+        popUp.game = 0;
         transparan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         //Debug.Log("Benar");
-        popUp.game = 0;
-        Debug.Log("Next Level");
         StartCoroutine(reset());
     }
 
     IEnumerator reset()
     {
+        popUp.game = 0;
         gmScript.count = 0;
         gmScript.currentWord = soal;
         yield return new WaitForSeconds(1f);
         Anim.SetBool("Fade", true);
+        popUp.game = 0;
         yield return new WaitUntil(()=>Img.color.a==1);
         SceneManager.LoadScene(category);
     }
