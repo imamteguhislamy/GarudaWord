@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class replay5 : MonoBehaviour
+public class replay4 : MonoBehaviour
 {
 
     // Use this for initialization
@@ -19,11 +19,11 @@ public class replay5 : MonoBehaviour
 
     private void OnMouseDown()
     {
-        popUp5.game = 1;
-        gm5.currentWord = "";
-        gm5.count = 0;
-        Debug.Log(popUp5.game + "-" + gm5.count);
-        FindObjectOfType<benar5>().Start();
+        popUp4.game = 1;
+        gm4.currentWord = "";
+        gm4.count = 0;
+        Debug.Log(popUp4.game + "-" + gm4.count);
+        FindObjectOfType<benar4>().Start();
 
     }
 }

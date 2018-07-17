@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class salah5 : MonoBehaviour
+public class salah4 : MonoBehaviour
 {
     public Transform transparan;
 
@@ -15,8 +15,8 @@ public class salah5 : MonoBehaviour
     {
         transparan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         //Debug.Log("Muncul Icon");
-        popUp5.game = 0;
-        gm5.cek = 0;
+        popUp4.game = 0;
+        gm4.cek = 0;
         //Debug.Log("Muncul");
         StartCoroutine("Delay");
     }
@@ -25,9 +25,9 @@ public class salah5 : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         transparan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
-        popUp5.game = 1;
-        gm5.count = 0;
-        gm5.currentWord = "";
+        popUp4.game = 1;
+        gm4.count = 0;
+        gm4.currentWord = "";
 
     }
 

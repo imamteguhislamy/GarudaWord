@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hint5 : MonoBehaviour
+public class hint4 : MonoBehaviour
 {
 
     // Use this for initialization
