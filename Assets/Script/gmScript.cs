@@ -34,6 +34,9 @@ public class gmScript : MonoBehaviour
     public static int nilai;
     public static int SavedScore;
 
+    public static string username = "Garuda";
+    public static int idPegawai = 11111;
+
     // Use this for initialization
     void Start()
     {
