@@ -39,7 +39,7 @@ public class gm6 : MonoBehaviour
     void Start()
     {
         LoadScore();
-        SkorTersimpan.GetComponent<TextMesh>().text = SavedScore.ToString();
+        SkorTersimpan.GetComponent<TMPro.TextMeshProUGUI>().text = SavedScore.ToString();
         // Debug.Log("Start Count = " + count);
     }
 

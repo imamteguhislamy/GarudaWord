@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/LetsPlay/S5.collaborate.unity
+- path: Assets/Scenes/Agility Scene/Tenacious.unity
   isLoaded: 1
   isActive: 1
