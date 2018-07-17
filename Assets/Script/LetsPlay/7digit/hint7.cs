@@ -2,21 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hint8 : MonoBehaviour
+public class hint7 : MonoBehaviour
 {
 
     // Use this for initialization
     public static int hintCount;
-    public string soal = "mitigate";
+    public string soal = "trust";
 
     public RectTransform lett1;
     public RectTransform lett2;
     public RectTransform lett3;
-    public RectTransform lett4;
-    public RectTransform lett5;
-    public RectTransform lett6;
-    public RectTransform lett7;
-    public RectTransform lett8;
     public static List<string> lett = new List<string>() { "lett1", "lett2", "lett3" };
 
 

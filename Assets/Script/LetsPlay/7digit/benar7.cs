@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class benar8 : MonoBehaviour
+public class benar7 : MonoBehaviour
 {
     public Transform transparan;
     public string category;
@@ -17,7 +17,6 @@ public class benar8 : MonoBehaviour
     public RectTransform lett5;
     public RectTransform lett6;
     public RectTransform lett7;
-    public RectTransform lett8;
     public Image Img;
     public Animator Anim;
 
@@ -26,18 +25,17 @@ public class benar8 : MonoBehaviour
     public void Start()
     {
         // gmScript.currentWord = "";
-        if (gm8.currentWord == soal)
+        if (gm7.currentWord == soal)
         {
             lett1.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(0, 1);
             lett2.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(1, 1);
             lett3.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(2, 1);
             lett4.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(3, 1);
             lett5.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(4, 1);
-            lett6.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(5, 1);
-            lett7.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(6, 1);
-            lett8.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(7, 1);
-            popUp8.game = 0;
-            gm8.currentWord = "";
+            lett6.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(4, 1);
+            lett7.GetComponent<TMPro.TextMeshProUGUI>().text = soal.Substring(4, 1);
+            popUp7.game = 0;
+            gm7.currentWord = "";
         }
         else
         {
@@ -50,16 +48,15 @@ public class benar8 : MonoBehaviour
 
         transparan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         //Debug.Log("Benar");
-        
+        popUp7.game = 0;
         Debug.Log("Next Level");
         StartCoroutine(reset());
     }
 
     IEnumerator reset()
     {
-        popUp8.game = 0;
-        gm8.count = 0;
-        gm8.currentWord = soal;
+        gm7.count = 0;
+        gm7.currentWord = soal;
         yield return new WaitForSeconds(1f);
         Anim.SetBool("Fade", true);
         yield return new WaitUntil(() => Img.color.a == 1);
