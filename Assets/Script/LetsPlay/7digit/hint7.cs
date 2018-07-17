@@ -9,6 +9,7 @@ public class hint7 : MonoBehaviour
     public static int hintCount;
     public string soal = "analyze";
 
+
     public RectTransform lett1;
     public RectTransform lett2;
     public RectTransform lett3;

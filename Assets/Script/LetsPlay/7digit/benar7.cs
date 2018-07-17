@@ -47,11 +47,13 @@ public class benar7 : MonoBehaviour
     {
 
         transparan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+
         StartCoroutine(reset());
     }
 
     IEnumerator reset()
     {
+
         popUp7.game = 0;
         gm7.count = 0;
         gm7.currentWord = soal;
