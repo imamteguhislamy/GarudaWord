@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Agility Scene/Ideas.unity
+- path: Assets/Scenes/LetsPlay/S5.collaborate.unity
   isLoaded: 1
   isActive: 1
