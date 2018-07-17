@@ -68,7 +68,7 @@ public class gm5 : MonoBehaviour
             }
             else if (currentWord != soal && count == soal.Length)
             {
-                FindObjectOfType<salah>().JawabanSalah();
+                FindObjectOfType<salah5>().JawabanSalah();
                 // result.GetComponent<TextMesh>().text = "Salah";
 
                 //Debug.Log("Anda Salah");
